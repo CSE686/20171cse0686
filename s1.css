@@ -1,0 +1,11 @@
+body{
+background-image:url("/home/sem6b10/Downloads/index10.jpeg");
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+h1,h2,h3{
+color:red;
+margin-left:100px;
+}
+p{
+color:blue;}
