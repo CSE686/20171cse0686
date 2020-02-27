@@ -38,8 +38,30 @@ text-transform:capitalize;
 }
 img:hover{
 border:0px;
-border:3px solid black;
+border:3px ridge black;
 height:50%;
 opacity:0.4;
 }
+#id1{color:blue;}
+.mycolour{color:green;}
+
+p.one{border-style:solid;
+border-width:5px;
+border-color:red blue green yellow;
+color:red ;}
+
+p.two{border-top-style:dotted;
+border-bottom-style:dotted;
+border-right-style:solid;
+border-left-style:solid;
+border-width:5px;}
+p.two{border-left:6px solid red;
+background-color:lightgrey;}
+
+p.two{
+margin:25px 50px 75px 100px;}
+div{width:300px;
+margin:auto;
+border:10px solid red;}
+
 
