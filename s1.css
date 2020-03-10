@@ -1,6 +1,6 @@
 body{
 
-background-image:url("/home/sem6b10/Downloads/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg");
+background-image:repeating-radial-gradient(red,yellow,blue,green);
 background-size:cover;
 background-repeat:no-repeat;
 background-attachment:fixed;
@@ -69,7 +69,8 @@ p.name{
 }
 div{
 margin:2cm;
-border:2px dashed green;
+border:2px solid black;
+
 padding:5px 5px 5px 5px;}
 
 li{display:inline;}
@@ -138,5 +139,41 @@ a.s:link {
 a:hover, a:active {
   background-color: red;
 }
+
+
+p.z::first-line{
+color:red;
+font-variant:small-caps;
+}
+p.z1::first-letter{
+color:red;
+font-variant:small-caps;
+}
+
+::selection{color:red;
+background:yellow;}
+
+
+div.hi{
+background-image:url("/home/sem6b10/Downloads/pngtree-pure-color-watercolor-graffiti-gradient-background-board-design-board-design-image_66713.jpg");
+}
+div.hel{
+background-color:white;
+opacity:0.4;}
+
+
+#grad1{
+background-image:linear-gradient(red,yellow);}
+
+div.a{
+
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+
+
 
 
