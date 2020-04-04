@@ -1,0 +1,237 @@
+<html>
+<head><title>Name</title>
+<script type="text/javascript">
+function getValue(){
+var retval=prompt("enter name:");
+document.write("my name is "+retval);
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="getValue();" value="click me">
+</body>
+</html>
+
+
+
+
+
+
+<html>
+<head>
+<script type="text/javascript">
+function getvalue()
+{
+var retval1=prompt("enter name");
+var retval2=confrim("entered name" +retval1);
+if(retval2==true){
+document.write("name:"+retval1+"confrimed sucess");
+return true;
+}
+else{
+document.write("ask to enter detail");
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="getvalue();" value="click me">
+</body>
+</html>
+
+
+
+<html>
+<head>
+<title>Number</title>
+<script>
+var a=new Array(10);
+var ln=a.length;
+
+for(var i=0;i<=ln;i++){
+a[i]=prompt("enter value");
+}
+for(let value of a){
+document.write(value + "<br>");
+}
+</script>
+</head>
+</html>
+
+
+
+
+
+
+
+<html>
+<head>
+<title> sum </title>
+<script>
+function sum(){
+var a,b,c;
+a=parseInt(document.getElementById("first").value);
+b=parseInt(document.getElementById("second").value);
+c=a + b;
+document.getElementById("answer").value=c;
+}
+</script>
+</head>
+<body>
+enter first number:<input id="first"><br>
+enter second number:<input id="second"><br>
+<button onclick="sum();">SUM</button>
+<input id="answer">
+</body>
+</html>
+
+
+
+
+
+<html>
+<head>
+<title>count</title>
+<script>
+function count(){
+for(var i=0;i<5;i++)
+document.getElementById("a").innerHTML+=document.getElementById("b").value+"<br>";}
+</script>
+</head><body>
+<input type="button" value="print" onclick="count();">
+name:<input type="text" id="b" value="sujaya"><br><br>
+<p id="a"></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title> cal </title>
+<script>
+function cal(x){
+var a,b,c;
+a=parseInt(document.getElementById("first").value);
+b=parseInt(document.getElementById("second").value);
+
+if(a<0||b<0)
+     alert("negative");
+else {if(x=="+")
+                             document.getElementById("answer").value=a+b;
+     else if(x=="-")
+			document.getElementById("answer").value=a-b;
+     else if(a==0||b==0 )
+         alert("zero not allowed");
+   else 
+		{ if(x=="*")
+			document.getElementById("answer").value=a*b;
+			else 
+			document.getElementById("answer").value=a/b;
+		}
+	}}
+</script>
+</head>
+<body>
+enter first number:<input type="number" id="first"><br>
+enter second number:<input type="number" id="second"><br>
+<input type="button" value="add" onclick="cal('+');"/></br>
+<input type="button" value="sub" onclick="cal('-');"><br>
+<input type="button" value="mul" onclick="cal('*');"><br>
+<input type="button" value="div" onclick="cal('/');"><br>
+<input id="answer">
+</body>
+</html>
+
+
+
+
+
+
+<html >
+<head>
+<body>
+<script type = "text/javascript">
+var number, square, cube,x, y;
+var a = prompt("Starting from", ""); 
+var b= prompt("Finish at", "");
+x = parseInt(a);
+y = parseInt(b);
+document.write("<table border = '4'>");
+document.write("<tr>",
+               "<th> Number </th>",
+               "<th> Square </th>",
+               "<th> Cube </th>",
+               "</tr>");
+
+for (number =x; number <= y; number++)  {
+    square = number * number;
+    cube = number * square;
+    document.write("<tr>",
+                   "<td>" + number + "</td>",
+                   "<td>" + square + "</td>",
+                   "<td>" + cube + "</td>",
+                   "</tr>");
+}
+document.write("</table>");
+</script>
+</head>
+</body>
+</html>
+
+
+
+
+
+
+
+<html>   
+   <head>
+      <title>Form Validation</title>      
+      <script type = "text/javascript">
+      </script>      
+   </head>
+   
+   <body>
+      <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+       <center>  <table cellspacing = "2" cellpadding = "2" border = "1" height="20%" width="20%" font-size="25px">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+             <tr>
+               <td align = "right">Age</td>
+               <td><input type = "number" name = "Age" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Gender</td>
+               <td><select name = "Gender">
+                     <option value = "-1" selected>[choose yours]</option>
+                     <option value = "1">Male</option>
+                     <option value = "2">Female</option>
+                     <option value = "3">Others</option>
+                  </select></td>
+            </tr>
+            
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table></center>
+      </form>      
+   </body>
+</html>
