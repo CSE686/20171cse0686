@@ -235,3 +235,210 @@ document.write("</table>");
       </form>      
    </body>
 </html>
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+    
+ 
+    
+     
+    <style type="text/css">
+        * {
+            font-family: 'Varela Round', sans-serif;
+        }
+        .container {
+            width: 1000px;
+            margin: 50px auto;
+        }
+        h1 {
+            text-align: center;
+        }
+
+	div {
+            font-size: 20px;
+            background-color: whitesmoke;
+            margin-top: 30px;
+            padding: 20px;
+        }
+    </style>
+  
+    <script type="text/javascript">
+ 
+        function showOne() {
+            var element = document.getElementById("one");
+             
+            if(element.style.visibility == "hidden"){
+                
+                element.style.visibility = "visible";
+            } else {
+             
+                element.style.visibility = "hidden";
+            }   
+        }
+   function showTwo() {
+            var element = document.getElementById("two");
+             
+            if(element.style.visibility == "hidden"){
+               
+                element.style.visibility = "visible";
+            } else {
+                element.style.visibility = "hidden";
+            }   
+        }
+function showThree() {
+            var element = document.getElementById("three");
+             
+            if(element.style.visibility == "hidden"){
+               
+                element.style.visibility = "visible";
+            } else {
+                element.style.visibility = "hidden";
+            }   
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <br>
+    <ol>
+        
+        <div onmouseover="showOne();" onmouseout="showOne()"><b>GOOGLE.</b></div>
+        <div id="one" style="visibility:hidden; background: lightgreen;">Google was founded in September 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University in California. Together they own about 14 percent of its shares and control 56 percent of the stockholder voting power through supervoting stock. They incorporated Google as a California privately held company on September 4, 1998, in California. Google was then reincorporated in Delaware on October 22, 2002.[12] An initial public offering (IPO) took place on August 19, 2004, and Google moved to its headquarters in Mountain View, California, nicknamed the Googleplex. In August 2015, Google announced plans to reorganize its various interests as a conglomerate called Alphabet Inc. Google is Alphabet's leading subsidiary and will continue to be the umbrella company for Alphabet's Internet interests. Sundar Pichai was appointed CEO of Google, replacing Larry Page who became the CEO of Alphabet.</div>
+<div onmouseover="showTwo();" onmouseout="showTwo()"><b>INSTAGRAM.</b></div>
+        <div id="two" style="visibility:hidden; background: lightgreen;">Instagram is an American photo and video-sharing social networking service owned by Facebook, Inc. It was created by Kevin Systrom and Mike Krieger, and launched in October 2010 on iOS. A version for Android devices was released in April 2012, followed by a feature-limited website interface in November 2012, a Fire OS app on June 15, 2014 and an app for Windows 10 tablets and computers in October 2016. The app allows users to upload photos and videos, which can be edited with filters and organized with tags and location information. Posts can be shared publicly or with pre-approved followers. Users can browse other users' content by tags and locations, and view trending content. Users can like photos and follow other users to add their content to a feed.</div>
+<div onmouseover="showThree();" onmouseout="showThree()"><b>WHATSAPP.</b></div>
+        <div id="three" style="visibility:hidden; background: lightgreen;">.WhatsApp Messenger, or simply WhatsApp, is an American freeware, cross-platform messaging and Voice over IP (VoIP) service owned by Facebook, Inc.[45] It allows users to send text messages and voice messages,[46] make voice and video calls, and share images, documents, user locations, and other media.[47][48] WhatsApp's client application runs on mobile devices but is also accessible from desktop computers, as long as the user's mobile device remains connected to the Internet while they use the desktop app.[49] The service requires users to provide a standard cellular mobile number for registering with the service.[50] In January 2018, WhatsApp released a standalone business app targeted at small business owners, called WhatsApp Business, to allow companies to communicate with customers who use the standard WhatsApp client</div>
+    </ol>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html> 
+<head> 
+<script> 
+function validation()								 
+{ 
+	var name = document.getElementById("Name").value;	
+	var age = document.getElementById("Age").value; 		 
+	var email = document.getElementById("EMail").value;
+	var gender = document.getElementById("Gender"); 
+	
+	if (name == "")								 
+	{ 
+		window.alert("Please enter your name."); 
+		name.focus(); 
+		return false; 
+	} 
+     else
+             {
+               for(i=0;i<name.length;i++)
+                {
+                  if(!((name.charAt(i)>='a' && name.charAt(i)<='z') || (name.charAt(i)>='A' && name.charAt(i)<='Z')))
+                   {
+                     alert("alphabets only");
+                     document.getByElementId("Name").value="";
+                     Name.focus();
+                     return false;}}}
+	if(name.length<5)
+         {
+          
+                     alert("name should be greater than 5");
+                     document.getByElementId("Name").value="";
+                     Name.focus();
+                     return false;}
+
+	if (age == "")							 
+	{ 
+		window.alert("Please enter your age."); 
+		Age.focus(); 
+		return false; 
+	} 
+if(age<15 || age>120)
+         {
+            alert("age should be between 15 and 120");
+            Age.focus();
+           return false;}
+	
+	if (email == "")								 
+	{ 
+		window.alert("Please enter a valid e-mail address."); 
+		EMail.focus(); 
+		return false; 
+	} 
+
+	
+        alert("success");
+	return true; 
+}</script> 
+
+<style> 
+validation {										 
+	margin-left: 70px; 
+	font-weight: bold ; 
+	float: left; 
+	clear: left; 
+	width: 100px; 
+	text-align: left; 
+	margin-right: 10px; 
+	font-size:50px; 
+} 
+
+div { 
+	box-sizing: border-box; 
+	width: 100%; 
+	border: 100px solid black; 
+	float: left; 
+	align-content: center; 
+	align-items: center; 
+} 
+
+form {										 
+	margin: 0 auto; 
+	width: 600px; 
+}</style></head> 
+
+<body> 
+<h1 style="text-align: center"> VALIDATION FORM </h1>		 
+<form name="RegForm"  action="form.html" onsubmit="return validation()" method="post"> 
+	
+	<p>Name: <input type="text" size=65 id="Name"> </p><br>	 
+	<p> Age: <input type="text" size=65 id="Age"> </p><br> 
+	<p>E-mail Address: <input type="text" size=65 id="EMail"> </p><br>
+		
+	<p>SELECT YOUR GENDER 
+		<select type="text" value="" name="Subject"> 
+			<option selected>Male</option> 
+			<option>Female</option> 
+			<option>Others</option> 
+		</select></p><br><br> 
+	
+	<p><input type="submit" value="send" name="Submit"></p>		 
+</form> 
+</body> 
+</html> 
+
+
